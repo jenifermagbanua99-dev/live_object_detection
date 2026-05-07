@@ -1,82 +1,109 @@
-🎥 Live Object Detection & Tracing (YOLOv8 + Streamlit)
-📌 Project Overview
+# 🎥 Live Object Detection & Tracing
 
-The Live Object Detection & Tracing System is a web-based AI application built using Streamlit and YOLOv8 (Ultralytics). It enables real-time object detection through a webcam or uploaded images.
+A real-time AI-powered object detection web application built using **YOLOv8**, **Streamlit**, and **OpenCV**. This project allows users to detect and identify objects instantly using a live camera feed or uploaded images with bounding boxes, labels, confidence scores, and object counting features.
 
-The system detects objects instantly, draws bounding boxes, labels detected items, and provides object counting with performance monitoring.
+---
 
-🚀 Features
-📷 Live Camera Object Detection
-🖼️ Image Upload Detection
-🎯 Real-time Bounding Box Visualization
-🏷️ Object Labeling (person, bottle, cell phone, etc.)
-📊 Object Counting per Class
-⚡ Fast YOLOv8 AI Inference
-🎚️ Adjustable Confidence Threshold
-📈 Processing Time Monitoring
-🌐 Streamlit Web Interface
-🧠 Technology Stack
-Python
-Streamlit
-YOLOv8 (Ultralytics)
-OpenCV
-NumPy
-Pillow (PIL)
-📂 Project Structure
-📁 yolov8-streamlit-app
-│
-├── app.py                 # Main Streamlit application
-├── yolov8n.pt            # YOLOv8 pretrained model
-├── requirements.txt      # Dependencies
-├── README.md             # Project documentation
-⚙️ Installation & Setup
-1. Clone the repository
-git clone https://github.com/your-username/yolov8-streamlit-app.git
-cd yolov8-streamlit-app
-2. Install dependencies
+## 🚀 Features
+
+- 📷 Live Camera Object Detection
+- 🖼️ Image Upload Detection
+- ⚡ Real-Time YOLOv8 Prediction
+- 📊 Object Counting & Detection Statistics
+- 🎚️ Adjustable Confidence Threshold
+- 🎨 Custom Purple Sidebar UI
+- 👨‍💻 Developer Information Card
+- ☁️ Streamlit Cloud Ready Deployment
+
+---
+
+## 🛠️ Technologies Used
+
+- Python
+- Streamlit
+- YOLOv8 (Ultralytics)
+- OpenCV
+- NumPy
+- Pillow (PIL)
+
+---
+
+## 📂 Project Structure
+
+```bash
+📦 Live-Object-Detection
+ ┣ 📜 app.py
+ ┣ 📜 requirements.txt
+ ┣ 📜 README.md
+##📦 Installation
+1️⃣ Clone the Repository
+git clone https://github.com/your-username/live-object-detection.git
+cd live-object-detection
+2️⃣ Install Dependencies
 pip install -r requirements.txt
-3. Run the app
+3️⃣ Run the Application
 streamlit run app.py
-📦 requirements.txt
-streamlit
-ultralytics
-numpy
-opencv-python
-pillow
-📸 How It Works
-Open the web application
-Select mode:
-Camera Detection
-Image Upload
-Input is processed using YOLOv8 model
-Objects are detected in real-time
-Bounding boxes and labels are displayed
-Object count and processing time are shown
-📊 Expected Output
-Real-time object detection
-Bounding boxes around detected objects
-Labels such as:
-person
-bottle
-cell phone
-chair
-Object counting per frame
-Processing time per detection
-🎯 Enhancements Added
-✔ Object Counting System
-✔ Confidence Threshold Control
-✔ Processing Time Display
-✔ Stable Image Preprocessing
-✔ Streamlit Cloud Deployment Ready
-⚠️ Notes
-Ensure yolov8n.pt is included in the project directory
-Allow camera permission in browser
-Best performance in well-lit environments
-👨‍💻 Developer
 
-Ma. Rhozeth B. Paz
+##▶️ Usage
+📷 Camera Detection
+Open the application
+Select Camera Detection
+Capture an image using your webcam
+The system will automatically detect objects
+🖼️ Image Upload
+Select Image Upload
+Upload an image file
+View detected objects with labels and counts
+##📊 Detection Features
+
+The application can:
+
+Detect multiple objects
+Display confidence scores
+Count detected objects
+Show processing time
+Draw bounding boxes around detected items
+##🎨 UI Customization
+
+The application includes:
+
+Purple sidebar theme
+Modern developer profile card
+Responsive layout
+User-friendly controls
+##👨‍💻 Developer
+
+Jenifer P. Magbanua
 BSCS - 3A
 
-📌 License
+##📸 Sample Output
+Real-time object detection
+Bounding boxes and labels
+Object summary statistics
+Detection confidence display
+##☁️ Streamlit Cloud Deployment
 
-This project is created for educational purposes only.
+To deploy online:
+
+Upload the project to GitHub
+Open Streamlit Cloud
+Connect your GitHub repository
+Deploy the app instantly
+##📜 License
+
+This project is for educational and research purposes only.
+
+##⭐ Acknowledgement
+
+Special thanks to:
+
+Ultralytics YOLOv8
+Streamlit Community
+OpenCV Library
+##🚀 Future Improvements
+image file detection
+Object tracking system
+Detection history logs
+Dark/Light theme toggle
+Export detection reports
+AI alert notification system
